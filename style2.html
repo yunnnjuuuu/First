@@ -1,0 +1,51 @@
+<!-- div_style2. html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #blue { 
+                /* margin: 0 auto; 브라우저가운데로 이동, 너비가 정해져야 가능*/
+                width: 700px;
+                box-sizing: border-box;
+                padding: 30px 70px 30px 30px;
+                background-color: blue;
+                margin-bottom: 20px;}
+        #sand{
+                width: 700px;
+                background-color: orange;
+                height: 70px;}     
+        #orange {
+                height: 50px;
+                background-color: red;
+                margin-bottom: 20px;}
+        #kaki{ 
+                height: 50px;
+                margin-bottom: 20px;
+                background-color: green;}
+        #yellow,#gray {display: inline-block;}
+        #yellow{
+            width: 150px;
+            background-color: yellow;
+            height: 50px;}
+        #gray{
+            background-color: gray;
+            height: 50px;
+            width: calc( 700px - 30px - 70px - 30px - 150px );
+            margin-left: 30px;}
+    </style>
+</head>
+<body>
+    <div id="blue">
+        <div id="orange"></div>
+        <div id="kaki"></div>
+        <div id="box">
+            <span id="yellow"></span><span id="gray"></span>
+        </div>
+    </div>
+
+    <div id="sand"></div>
+</body>
+</html>
