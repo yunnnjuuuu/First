@@ -1,0 +1,70 @@
+<!-- div_style4.html-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        
+        #wrap {
+            width: 800px;
+            /*margin: 50px 0 outo;*/
+            background-color: #5aa; 
+            padding: 80px 30px 20px 30px;
+        }
+        /* #box1> .card:first-child{} 첫번째자식
+            #box1> .card:last-child{} 마지막자식 */
+        #box1 {
+            width: 100%;
+        }
+        .card{
+            display: inline-block;
+            width: 32%;
+            height: 350px;
+        }
+        #box1>.card:nth-child(1){
+            background-color: #ffe400 ;
+        }
+        #box1>.card:nth-child(2){
+            background-color: green;
+            margin-right: 1.25%;
+            margin-left: 1.25%;
+        }
+        #box1>.card:nth-child(3){
+            background-color: #f361dc;
+        }
+        #box2{
+            width: calc (98.5% + 11px);
+            background-color: orangered;
+            padding: 15px 40px;
+            box-sizing: border-box;
+        }
+        .text{
+            display: inline-block;
+            width: 100px; height: 50px;
+        }
+        #box2>.text:first-child{
+            background-color: red;
+            margin-right: 30px;
+        }
+        #box2>.text:last-child{
+            background-color: navy;
+        }
+        
+    </style>
+</head>
+<body>
+    
+    <div id="wrap">
+        <div id="box1">
+            <span class="card"></span>
+            <span class="card"></span>
+            <span class="card"></span>
+        <div id="box2">
+            <span class="text"></span>
+            <span class="text"></span>
+    </div>
+</body>
+</html>
