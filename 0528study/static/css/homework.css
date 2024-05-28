@@ -1,0 +1,16 @@
+#gallery ul{
+    width: 100%;
+    position: relative;
+}
+#gallery ul li{
+    width: 100%;
+    position: relative;
+}
+#gallery ul li{
+    width: 30%;
+    background-size: cover;
+    height: 200px;
+}
+#gallery ul li:first-child{
+    background: url(https://loremflickr.com/400/400?random=1) no-repeat;
+}
